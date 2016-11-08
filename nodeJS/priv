@@ -4,8 +4,8 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 nodeJSInstallOwner=
 nodeJSInstallAccess=
@@ -16,8 +16,8 @@ npmInstallAccess=
 npmRemoveOwner=
 npmRemoveAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

@@ -4,11 +4,11 @@ dirAccess=755
 owner=
 access=775
 
-binDirOwner=
-binDirAccess=755
+scriptDirOwner=
+scriptDirAccess=755
 
-bin*Owner=
-bin*Access=
+script*Owner=
+script*Access=
 
 initOwner=
 initAccess=
@@ -27,11 +27,11 @@ stopAccess=
 testOwner=
 testAccess=
 
-libDirOwner=
-libDirAccess=755
+configDirOwner=
+configDirAccess=755
 
-lib*Owner=
-lib*Access=
+config*Owner=
+config*Access=
 
 privOwner=
 privAccess=

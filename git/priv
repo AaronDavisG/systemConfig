@@ -4,16 +4,16 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 syncDownOwner=
 syncDownAccess=
 syncUpOwner=
 syncUpAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

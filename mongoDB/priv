@@ -4,8 +4,8 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 initMongoDBOwner=
 initMongoDBAccess=
@@ -14,8 +14,8 @@ installMongoDBAccess=
 removeMongoDBOwner=
 removeMongoDBAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

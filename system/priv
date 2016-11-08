@@ -1,5 +1,5 @@
-dirOwner=
-dirAccess=755
+scriptOwner=
+scriptAccess=755
 
 owner=
 access=775
@@ -7,11 +7,11 @@ access=775
 rootDirOwner=
 rootDirAccess=
 
-rootBinDirOwner=
-rootBinDirAccess=
+rootScriptDirOwner=
+rootScriptDirAccess=
 
-rootLibDirOwner=
-rootLibDirAccess=
+rootConfigDirOwner=
+rootConfigDirAccess=
 
 rootLogDirOwner=
 rootLogDirAccess=
@@ -19,8 +19,8 @@ rootLogDirAccess=
 rootResetDirOwner=
 rootResetDirAccess=
 
-binDirOwner=
-binDirAccess=755
+scriptDirOwner=
+scriptDirAccess=755
 
 actionOwner=
 actionAccess=
@@ -57,8 +57,8 @@ systemRemoveAccess=
 testOwner=
 testAccess=
 
-libDirOwner=
-libDirAccess=755
+configDirOwner=
+configDirAccess=755
 
 privOwner=
 privAccess=

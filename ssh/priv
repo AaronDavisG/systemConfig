@@ -4,8 +4,8 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 setKeyOwner=
 setKeyAccess=
@@ -14,8 +14,8 @@ sshInitAccess=
 sshRemoveOwner=
 sshRemoveAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

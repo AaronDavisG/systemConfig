@@ -4,8 +4,8 @@
 #owner=root:nut
 #access=650
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 upsInstallOwner=
 upsInstallAccess=
@@ -24,8 +24,8 @@ eventAccess=
 shutdownOwner=
 shutdownAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

@@ -4,16 +4,16 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 updateIPAccess=
 updateIPOwner=
 dynIPInitAccess=
 dynIPInitOwner=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

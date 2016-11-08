@@ -4,8 +4,8 @@ dirAccess=
 owner=
 access=
 
-binDirOwner=
-binDirAccess=
+scriptDirOwner=
+scriptDirAccess=
 
 iptablesInitOwner=
 iptablesIniAccess=
@@ -16,8 +16,8 @@ iptablesResetAccess=
 iptablesStatusOwner=
 iptablesStatusAccess=
 
-libDirOwner=
-libDirAccess=
+configDirOwner=
+configDirAccess=
 
 sysOwner=
 sysAccess=

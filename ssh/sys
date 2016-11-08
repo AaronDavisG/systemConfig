@@ -25,7 +25,7 @@ stopSize=1
 stop0=service stop
 
 stopSERVICESize=1
-#stopSERVICE0=sshd
+stopSERVICE0=sshd
 
 resetSize=2
 reset0=fileRESET

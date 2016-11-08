@@ -1,0 +1,5 @@
+user=mongod
+group=mongod
+dbPath=/mongo/db/
+logPath=/mongo/mongod.log
+pidPath=/mongo/mongod.pid

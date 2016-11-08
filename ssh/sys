@@ -1,0 +1,48 @@
+installSize=2
+install0=aptGetINSTALL
+install1=fileRESET INSTALL
+
+aptGetINSTALLSize=1
+aptGetINSTALL0=openssh-server
+
+initSize=2
+init0=privINIT
+init1=sshInit
+
+startSize=1
+start0=service start
+
+startSERVICESize=1
+startSERVICE0=sshd
+
+statusSize=1
+status0=service is-active
+
+is-activeSERVICESize=1
+is-activeSERVICE0=sshd
+
+stopSize=1
+stop0=service stop
+
+stopSERVICESize=1
+#stopSERVICE0=sshd
+
+resetSize=2
+reset0=fileRESET
+reset1=service restart
+
+restartSERVICESize=1
+restartSERVICE0=sshd
+
+fileRESETSize=1
+fileRESET0=/etc/ssh/sshd_config
+
+resetSERVICESize=1
+resetSERVICE0=sshd
+
+removeSize=2
+remove0=aptGetREMOVE
+remove1=sshRemove
+
+aptGetREMOVESize=1
+#aptGetREMOVE0=openssh-server

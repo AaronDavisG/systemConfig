@@ -1,0 +1,65 @@
+iptablesInitSize=24
+
+#allow loopback
+iptablesInit1=-A INPUT -i lo -j ACCEPT
+iptablesInit2=-A OUTPUT -o lo -j ACCEPT
+
+#allow established sessions
+iptablesInit3=-A INPUT -m conntrack --ctstate ESTABLISHED,RELATED -j ACCEPT
+iptablesInit4=-A OUTPUT -m conntrack --ctstate ESTABLISHED -j ACCEPT
+
+#allow internal to external
+iptablesInit5=-A FORWARD -i eth1 -o eth0 -j ACCEPT
+
+#drop invalid packets
+iptablesInit6=-A INPUT -m conntrack --ctstate INVALID -j DROP
+
+#allow traffic on specific ports
+
+#ssh
+#incoming
+iptablesInit7=-A INPUT -p tcp --dport 22 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptablesInit8=-A OUTPUT -p tcp --sport 22 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+
+#http
+#incoming
+iptablesInit9=-A INPUT -p tcp --dport 8080 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptablesInit10=-A OUTPUT -p tcp --sport 8080 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+#outgoing
+iptablesInit11=-A INPUT -p tcp --sport 8080 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptablesInit12=-A OUTPUT -p tcp --dport 8080 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
+#https
+#incoming
+iptablesInit13=-A INPUT -p tcp --dport 443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptablesInit14=-A OUTPUT -p tcp --sport 443 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+#outgoing
+iptablesInit15=-A INPUT -p tcp --sport 443 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptablesInit16=-A OUTPUT -p tcp --dport 443 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
+#dns
+#outgoing
+iptablesInit17=-A INPUT -p udp --sport 53 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+iptablesInit18=-A OUTPUT -p udp --dport 53 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+
+#ups
+#incoming
+iptablesInit19=-A INPUT -p tcp --dport 3493 -m conntrack --ctstate NEW,ESTABLISHED -j ACCEPT
+iptablesInit20=-A OUTPUT -p tcp --sport 3493 -m conntrack --ctstate ESTABLISHED -j ACCEPT
+
+#set policies to drop
+iptablesInit21=-P INPUT DROP
+iptablesInit22=-P FORWARD DROP
+iptablesInit23=-P OUTPUT DROP
+
+iptablesResetSize=8
+
+iptablesReset0=-P INPUT ACCEPT
+iptablesReset1=-P FORWARD ACCEPT
+iptablesReset2=-P OUTPUT ACCEPT
+iptablesReset3=-t nat -F
+iptablesReset4=-t mangle -F
+iptablesReset5=-Z
+iptablesReset6=-F
+iptablesReset7=-X
+

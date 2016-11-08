@@ -1,0 +1,42 @@
+installSize=3
+install0=mongoDBInstall
+install1=aptGetINSTALL
+install2=fileRESET INSTALL
+
+aptGetINSTALLSize=1
+aptGetINSTALL0=mongodb-org=3.2.10 mongodb-org-server=3.2.10 mongodb-org-shell=3.2.10 mongodb-org-mongos=3.2.10 mongodb-org-tools=3.2.10
+
+initSize=2
+init0=privINIT
+init1=mongoDBInit
+
+startSize=1
+start0=service start
+
+startSERVICESize=1
+startSERVICE0=mongod
+
+statusSize=1
+status0=service is-active
+
+is-activeSERVICESize=1
+is-activeSERVICE0=mongod
+
+stopSize=1
+stop0=service stop
+
+stopSERVICESize=1
+stopSERVICE0=mongod
+
+resetSize=1
+reset0=fileRESET
+
+fileRESETSize=1
+fileRESET0=/etc/mongod.conf
+
+removeSize=2
+remove0=aptGetREMOVE
+remove1=mongoDBRemove
+
+aptGetREMOVESize=1
+aptGetREMOVE0=mongodb-org*

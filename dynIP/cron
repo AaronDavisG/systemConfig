@@ -1,0 +1,9 @@
+min=42
+hour=*
+day=*
+month=*
+weekday=*
+
+command=updateAddress
+
+user=

@@ -1,0 +1,15 @@
+nutUserName=nutmon
+nutGroupName=nut
+
+name=KIN-1000AP
+driver=powercom
+devicePort=/dev/ttyS0
+type=KIN
+description=UPS
+mode=standalone
+listenPort=3493
+user=upsUser
+password=RANDOM
+upsmonStatus=master
+event=upsEvent
+shutdown=upsShutdown

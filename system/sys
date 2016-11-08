@@ -1,0 +1,79 @@
+installSize=9
+install0=aptGetINSTALL
+install1=firewall install
+install2=git install
+install3=ssh install
+install4=dynIP install
+install5=ups install
+install6=mongoDB install
+install7=nodeJS install
+install8=init
+
+aptGetINSTALLSize=2
+aptGetINSTALL0=htop
+aptGetINSTALL1=build-essential
+
+initSize=10
+init0=systemPriv
+init1=privINIT
+init2=firewall init
+init3=git init
+init4=ssh init
+init5=dynIP init
+init6=ups init
+init7=mongoDB init
+init8=nodeJS init
+init9=start
+
+startSize=7
+start0=firewall start
+start1=git start
+start2=ssh start
+start3=dynIP start
+start4=ups start
+start5=mongoDB start
+start6=nodeJS start
+
+stopSize=7
+stop0=firewall stop
+stop1=git stop
+stop2=ssh stop
+stop3=dynIP stop
+stop4=ups stop
+stop5=mongoDB stop
+stop6=nodeJS stop
+
+statusSize=7
+status0=firewall status
+status1=git status
+status2=ssh status
+status3=dynIP status
+status4=ups status
+status5=mongoDB status
+status6=nodeJS status
+
+resetSize=7
+reset0=firewall reset
+reset1=git reset
+reset2=ssh reset
+reset3=dynIP reset
+reset4=ups reset
+reset5=mongoDB reset
+reset6=nodeJS reset
+
+removeSize=12
+remove0=removeWarning
+remove1=stop
+remove2=reset
+remove3=aptGetREMOVE
+remove4=firewall remove
+remove5=git remove
+remove6=ssh remove
+remove7=dynIP remove
+remove8=ups remove
+remove9=mongoDB remove
+remove10=nodeJS remove
+remove11=systemRemove
+
+aptGetREMOVESize=1
+aptGetREMOVE0=htop

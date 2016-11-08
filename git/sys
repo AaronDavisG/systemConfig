@@ -1,0 +1,11 @@
+installSize=1
+install0=aptGetINSTALL
+
+aptGetINSTALLSize=1
+aptGetINSTALL0=git
+
+removeSize=1
+remove0=aptGetREMOVE
+
+aptGetREMOVESize=1
+#aptGetREMOVE0=git

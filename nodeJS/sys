@@ -1,0 +1,17 @@
+installSize=3
+install0=nodeJSInstall
+install1=aptGetINSTALL
+install2=npmInstall
+
+aptGetINSTALLSize=1
+aptGetINSTALL0=nodejs
+
+initSize=1
+init0=privINIT
+
+removeSize=2
+remove0=npmRemove
+remove1=aptGetREMOVE
+
+aptGetREMOVESize=1
+aptGetREMOVE0=nodejs

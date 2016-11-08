@@ -1,0 +1,17 @@
+npmInstallSize=3
+npmInstall0=-g nodemon
+npmInstall1=-g jshint
+npmInstall2=-g csslint
+
+#npmInstall1=express
+#npmInstall2=mongoose
+#npmInstall3=passport
+
+npmRemoveSize=3
+npmRemove0=-g nodemon
+npmRemove1=-g jshint
+npmRemove2=-g csslint
+
+#npmRemove1=express
+#npmRemove2=mongoose
+#npmRemove3=passport
